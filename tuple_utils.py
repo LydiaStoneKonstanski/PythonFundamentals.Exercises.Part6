@@ -2,10 +2,6 @@ from typing import Iterable, Tuple, List, Union
 TicTacToeRow = List[str]
 TicTacToeBoard = Tuple[TicTacToeRow, TicTacToeRow, TicTacToeRow]
 
-#For each function, remove the line containing the pass statement and implement the functionality described in the docstrings.
-#Run the unit tests to validate that the implementation passes unit tests.
-#python3 -m unittest test_tuple_utils.py
-
 #My idea is to look at each list within the tuple, if it does not need to be updated,
 #return it to a new board I am concatenating.
 def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: str) -> None:
