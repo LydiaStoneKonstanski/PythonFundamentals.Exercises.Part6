@@ -14,7 +14,7 @@ def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: st
         else:
             row = board[y]
             row[pos_x] = symbol
-            new_board = new_board + (row,)
+            new_board += (row,)
             #Switching the new board in for the tuple that was there.
     board = new_board
 
@@ -23,7 +23,7 @@ def count_instances(collection: Tuple, instance: Union[int, str]) -> int:
     count = 0
     for item in collection:
         if item == instance:
-            count = count + 1
+            count += 1
     return count
 
 
